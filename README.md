@@ -1,7 +1,7 @@
 # Timer-Based TCP Congestion Control for Linux Kernel
 
 ## Introduction
-This repository hosts the kernel source code developed as part of a collaborative master thesis project. The thesis presents a novel approach to TCP congestion control in the Linux kernel, introducing a timer-based mechanism distinct from traditional methods.
+This repository hosts the kernel source code developed as part of a collaborative ([@chribjel](https://github.com/chribjel) and [@andreaslimidev](https://github.com/andreaslimidev)) master thesis project. The thesis presents a novel approach to TCP congestion control in the Linux kernel, introducing a timer-based mechanism distinct from traditional methods.
 
 ## Overview
 The congestion control module developed in this project is fundamentally different from conventional TCP congestion control strategies. Rather than relying exclusively on ACK-clocking or a congestion window, this implementation is based on time. Packet transmissions are dictated by timer expirations during both the Slow Start and Congestion Avoidance phases. Our approach effectively interpolates the transmission behavior of traditional TCP congestion control while ensuring a smooth distribution of packets over time, resulting in more consistent traffic patterns.
